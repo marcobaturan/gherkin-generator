@@ -76,7 +76,9 @@ export default async function handler(req, res) {
     const apiKey = process.env.Gherking_API_KEY;
 
     if (!apiKey) {
-        return res.status(500).json({ error: 'Server misconfiguration: missing API key' });
+        return res.status(500).json({
+            error: 'Server misconfiguration: missing API key. Expected env var: Gherking_API_KEY',
+        });
     }
 
     try {
