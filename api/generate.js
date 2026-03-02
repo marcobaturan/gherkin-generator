@@ -9,7 +9,7 @@
  *   GEMINI_API_KEY — Google Generative AI API key
  */
 
-const GEMINI_MODEL = 'gemini-1.5-flash';
+const GEMINI_MODEL = 'gemini-2.0-flash';
 const GEMINI_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models';
 
 /**
