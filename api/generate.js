@@ -73,11 +73,11 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'No input provided' });
     }
 
-    const apiKey = process.env.Gherking_API_KEY;
+    const apiKey = process.env.Gherking_API_KEY || process.env.Gherkin_API_KEY;
 
     if (!apiKey) {
         return res.status(500).json({
-            error: 'Server misconfiguration: missing API key. Expected env var: Gherking_API_KEY',
+            error: 'Server misconfiguration: missing API key. Checked for: Gherking_API_KEY, Gherkin_API_KEY',
         });
     }
 

@@ -88,6 +88,7 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
+    const hasKey = process.env.Gherking_API_KEY || process.env.Gherkin_API_KEY;
     console.log(`✓ Local API server running on http://localhost:${PORT}`);
-    console.log(`  Gherking_API_KEY: ${process.env.Gherking_API_KEY ? '✓ loaded' : '✗ MISSING'}`);
+    console.log(`  API Key state: ${hasKey ? '✓ loaded' : '✗ MISSING'}`);
 });
