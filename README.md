@@ -2,7 +2,7 @@
 
 > AI-powered web app that generates **BDD test cases in Gherkin format** from plain-text functional descriptions.
 
-[![Live Demo](https://img.shields.io/badge/demo-vercel-black?logo=vercel)](https://gherkin-generator.vercel.app)
+[![Live Demo](https://img.shields.io/badge/demo-vercel-black?logo=vercel)](https://gherkin-generator-test-2.vercel.app/)
 [![Built with](https://img.shields.io/badge/built%20with-React%20%2B%20Gemini%20AI-6366f1)](https://github.com/marcobaturan/gherkin-generator)
 
 ---
